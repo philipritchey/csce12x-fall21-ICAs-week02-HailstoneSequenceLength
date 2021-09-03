@@ -21,6 +21,7 @@ std::pair<int,int> test(std::list<std::pair<int,int>> tests) {
             std::cout << "[FAIL] expected hailstone_sequence_length("<<number<<") to be " << expected << ", got " << actual << std::endl;
             fail_cnt++;
         } else {
+            std::cout << "[PASS] hailstone_sequence_length("<<number<<") = " << actual << std::endl;
             pass_cnt++;
         }
     }
